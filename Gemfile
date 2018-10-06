@@ -59,7 +59,7 @@ group :development do
   gem 'haml', '~> 5.0', '>= 5.0.4'
   # Fast
   gem 'rack-mini-profiler', '~> 1.0'
-  gem 'flamegraph', '~> 0.9.5'
+  # gem 'flamegraph', '~> 0.9.5'
 end
 
 group :test do
