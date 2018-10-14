@@ -47,7 +47,9 @@ group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
-  # spring rake db:migrate
+  # Before install Gem need use ->
+    # spring rake db:migrate
+    # spring rake db:seed
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring', '~> 2.0', '>= 2.0.2'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -63,6 +65,8 @@ group :development do
   # Fast
   gem 'rack-mini-profiler', '~> 1.0'
   # gem 'flamegraph', '~> 0.9.5'
+  # FontAwesome
+  gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 end
 
 group :test do
