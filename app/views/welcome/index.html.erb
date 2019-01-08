@@ -8,20 +8,11 @@
     <meta name="description" content="Meridian bs3 templates">
     <meta name="author" content="v.sergeev.m@gmail.com">
     <link rel="icon" href="favicon.ico">
-
     <title>Carousel Template for Bootstrap</title>
-
     <!-- Bootstrap core CSS -->
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <%= stylesheet_link_tag "bootstrap.min.css" %>
-
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!-- <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
     <%= stylesheet_link_tag "ie10-viewport-bug-workaround.css" %>
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <!-- <script src="ie-emulation-modes-warning.js"></script> -->
     <%= javascript_include_tag "ie-emulation-modes-warning.js" %>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -31,33 +22,17 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
     <%= stylesheet_link_tag "carousel.css" %>
-
     <!-- footer -->
-    <link rel="stylesheet" href="css/footer.css">
     <%= stylesheet_link_tag "footer.css" %>
-    
     <!-- font-awesome -->
-    <link rel="stylesheet" href="css/font-awesome.css">
     <%= stylesheet_link_tag "font-awesome.css" %>
-
     <!-- bootstrap submenu -->
-    <link rel="stylesheet" href="css/bootstrap-submenu.min.css">
-    <%= stylesheet_link_tag "bootstrap-submenu.min.css" %>
-
-    <script src="js/bootstrap-submenu.min.js"></script>
     <%= javascript_include_tag "bootstrap-submenu.min.js" %>
-
-    <link rel="stylesheet" href="css/sidebar.css">
+    <%= stylesheet_link_tag "bootstrap-submenu.min.css" %>
     <%= stylesheet_link_tag "sidebar.css" %>
-
-    <link rel="stylesheet" href="css/bootstrap-docs.css">
     <%= stylesheet_link_tag "bootstrap-docs.css" %>
-
-    <link rel="stylesheet" href="css/blog.css">
     <%= stylesheet_link_tag "blog.css" %>
-
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -405,17 +380,15 @@
         </div>
       </div>
     <!-- </div><!-- /.container -->
-
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<%= javascript_include_tag "vendor/jquery.min.js" %><\/script>')</script>
+    <%= javascript_include_tag "bootstrap.min.js" %>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="js/vendor/holder.min.js"></script>
+    <%= javascript_include_tag "vendor/holder.min.js" %>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <%= javascript_include_tag "ie10-viewport-bug-workaround.js" %>
   </body>
 </html>

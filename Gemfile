@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '2.5.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
@@ -67,6 +67,7 @@ group :development do
   # gem 'flamegraph', '~> 0.9.5'
   # FontAwesome
   gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
+  gem 'font-awesome-sass', '~> 4.6', '>= 4.6.2'
 end
 
 group :test do
